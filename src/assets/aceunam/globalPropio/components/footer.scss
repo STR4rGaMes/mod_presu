@@ -1,0 +1,11 @@
+.main-footer {
+    background-color: var(--bgc-system);
+    grid-area: foo;
+    /*position: fixed;*/
+}
+.footer-inner {
+    color: var(--c-system);
+    line-height: 1.5rem;
+    padding-left: 0;
+    text-align: center;
+}

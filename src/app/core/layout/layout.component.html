@@ -1,0 +1,13 @@
+<body>
+    <div class="body-container">
+        <app-header class="main-header navbar-default"></app-header>
+
+            <app-sidebar class="main-nav"></app-sidebar>
+
+            <main class="main">
+                <ng-content select="router-outlet"></ng-content>
+            </main>
+
+        <app-footer class="main-footer" ></app-footer>
+    </div>
+</body>

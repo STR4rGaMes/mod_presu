@@ -1,0 +1,30 @@
+.main-header {
+    background-color: #157fcc;
+    grid-area: hea;
+    display:grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 60px;
+  }
+
+.mr-2,
+.mx-2 {
+	margin-right: 5px;
+}
+
+.header-brand {
+    margin-left: .5rem;
+    
+  }
+.header-intro {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    width: auto;
+    /*width: var(--sidebar-width);*/
+    height: 100%
+}
+
+// .navbar-default {
+//     background-color: var(--bgc-system);
+// }

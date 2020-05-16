@@ -1,0 +1,17 @@
+// @import '../vendor/bootstrap/bootstrap.scss';
+@import'./_bootstrap.scss';
+
+//librerias actualizadas hasta 5 mayo
+@import './styles.scss';
+@import './owner.scss';
+@import'./ui.grid.scss';
+
+/*@import'./globalPropio/_fontawesome.min.scss';*/
+// resivasar
+// @import'./globalPropio/solid.scss';
+@import'./nouislider.min.scss';
+
+// vistas de compoentes
+@import'./view/login.scss';
+@import'./components/header.scss';
+@import'./components/footer.scss';

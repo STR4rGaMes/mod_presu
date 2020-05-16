@@ -1,0 +1,270 @@
+<div class="sidebar" id="sidebar"> <!-- sidebar-default expandable sidebar-fixed d-xl-block -->
+  <div style="background-color: #fff"></div>
+  <div class="sidebar-content">
+    <ul class="menu" aria-label="Main"><!--has-active-border-->
+    <li class="panel active" id="1000">
+      <div class="panel-header"><!-- dropdown-toggle-->
+        <span class="header-text">Presupuesto</span><!-- fadeable-->
+        <span class="header-icon"  (click)="panelExpand($event)"></span>
+      </div>
+      <div class="panel-content show"><!--hideable submenu collapse-->
+        <table class="ui-tree" aria-labelledby="gbox_grid-table">
+          <tbody class="ofx-auto">
+            <tr class="ui-row" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch"></span>
+                <span class="ui-tree-icon-leaf"></span>
+                <a [routerLink]="['/Modules/bud/clasificadores']">
+                  <span class="ui-tree-node-text">Clasificadores</span>
+                </a>
+              </td>
+            </tr>
+            <tr class="ui-row" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch"></span>
+                <span class="ui-tree-icon-leaf"></span>
+                <a [routerLink]="['/Modules/bud/proyectos']">
+                  <span class="ui-tree-node-text">Proyectos</span>
+                </a>
+              </td>
+            </tr>
+            <tr class="ui-row" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch"></span>
+                <span class="ui-tree-icon-leaf"></span>
+                <span class="ui-tree-node-text">Secuencias Funcionales</span>
+              </td>
+            </tr>
+            <tr class="ui-row" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch"></span>
+                <span class="ui-tree-icon-leaf"></span>
+                <span class="ui-tree-node-text">Tareas Funcionales</span>
+              </td>
+            </tr>
+            <tr class="ui-row" id="1500" data-expand="0" data-branch="0" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch-plus-end expand-coll" (click)="folderClick($event)"></span>
+                <span class="ui-tree-icon-folder expand-coll" (click)="folderClick($event)"></span>
+                <span class="ui-tree-node-text">SIAF</span>
+              </td>
+            </tr>
+            <tr class="ui-row ui-tree-sub" data-parent="1500" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch-empty"></span>
+                <span class="ui-tree-icon-branch"></span>
+                <span class="ui-tree-icon-leaf"></span>
+                <span class="ui-tree-node-text">Cuentas Contables</span>
+              </td>
+            </tr>
+            <tr class="ui-row ui-tree-sub" data-parent="1500" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch-empty"></span>
+                <span class="ui-tree-icon-branch"></span>
+                <span class="ui-tree-icon-leaf"></span>
+                <span class="ui-tree-node-text">Notas Prtesupuestales</span>
+              </td>
+            </tr>
+            <tr class="ui-row ui-tree-sub" data-parent="1500" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch-empty"></span>
+                <span class="ui-tree-icon-branch"></span>
+                <span class="ui-tree-icon-leaf"></span>
+                <span class="ui-tree-node-text">Certificados</span>
+              </td>
+            </tr>
+            <tr class="ui-row ui-tree-sub" data-parent="1500" role="row">
+              <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+                <span class="ui-tree-icon-branch-empty"></span>
+                <span class="ui-tree-icon-branch-end"></span>
+                <span class="ui-tree-icon-leaf"></span>
+                <span class="ui-tree-node-text">Expedientes</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+    <li class="panel" id="2000">
+      <div class="panel-header">
+        <span class="header-text">Logística</span>
+        <span class="header-icon expand" (click)="panelExpand($event)"></span>
+      </div>
+      <div class="panel-content">
+        <table class="ui-tree" aria-labelledby="gbox_grid-table">
+        <tbody class="ofx-auto">
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Proveedores</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Control Requerimiento</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Cotizaciones</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Ordenes</span>
+            </td>
+          </tr>
+          <tr class="ui-row" id="2500" data-expand="0" data-branch="0" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch-plus-end expand-coll" (click)="folderClick($event)"></span>
+              <span class="ui-tree-icon-folder expand-coll" (click)="folderClick($event)"></span>
+              <span class="ui-tree-node-text">Almacen</span>
+            </td>
+          </tr>
+          <tr class="ui-row ui-tree-sub" data-parent="2500" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch-empty"></span>
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Recepción de Bienes</span>
+            </td>
+          </tr>
+          <tr class="ui-row ui-tree-sub" data-parent="2500" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch-empty"></span>
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Salida de Bienes</span>
+            </td>
+          </tr>
+          <tr class="ui-row ui-tree-sub" data-parent="2500" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch-empty"></span>
+              <span class="ui-tree-icon-branch-end"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Notas de Entrada</span>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </li>
+    <li class="panel" id="7000">
+      <div class="panel-header">
+        <span class="header-text">Mantenimiento</span>
+        <span class="header-icon expand" (click)="panelExpand($event)"></span>
+      </div>
+      <div class="panel-content">
+        <table class="ui-tree" aria-labelledby="gbox_grid-table">
+        <tbody class="ofx-auto">
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Registro de Identidad</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Registro Proveedores / Clientes</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Módulos de Aplicación</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Registro de Clases</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Registro de Familias</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Catalogo Bienes y Servicios</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch-end"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Vehículos</span>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </li>
+    <li class="panel" id="9000">
+      <div class="panel-header">
+        <span class="header-text">Accesos</span>
+        <span class="header-icon expand" (click)="panelExpand($event)"></span>
+      </div>
+      <div class="panel-content">
+        <table class="ui-tree" aria-labelledby="gbox_grid-table">
+        <tbody class="ofx-auto">
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Registro de Usuarios</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Unidades Orgánicas</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Módulos de Aplicación</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Modificar Clave 1</span>
+            </td>
+          </tr>
+          <tr class="ui-row" role="row">
+            <td class="ui-grid-cell-tree" role="gridcell" aria-describedby="grid-table_id">
+              <span class="ui-tree-icon-branch-end"></span>
+              <span class="ui-tree-icon-leaf"></span>
+              <span class="ui-tree-node-text">Modificar Clave 2</span>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </li>
+    </ul>  
+  </div>
+  </div>
+

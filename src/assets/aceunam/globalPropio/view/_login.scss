@@ -1,0 +1,34 @@
+.login-container {
+  border-radius: 20px solid !important;
+  display: grid;
+  grid-template-columns: minmax(350px,auto) minmax(320px,auto);
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "asi mai";
+  justify-content: center;
+}
+
+@media(max-width: 700px) {
+  .login-container {
+      grid-template-columns: minmax(300px,auto);
+      grid-template-rows: auto auto;
+      grid-template-areas: 
+        "mai"
+        "asi ";
+  }
+
+  .main-aside .c-logo {
+    display: none
+  }
+  .main-aside article {
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-top: 0;
+  }
+  main{
+    padding-bottom: 3rem
+  }
+  main .c-logo {
+    display: block
+  }
+}

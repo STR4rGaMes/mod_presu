@@ -1,0 +1,18 @@
+// @import '../vendor/bootstrap/bootstrap.scss';
+@import'./globalPropio/_bootstrap.scss';
+
+//librerias actualizadas hasta 5 mayo
+@import './globalPropio/owner.scss';
+@import './ace/ace.scss';
+@import'./globalPropio/ui.grid.scss';
+
+@import'./globalPropio/_fontawesome.min.scss';
+// resivasar
+// @import'./globalPropio/solid.scss';
+@import'./globalPropio/nouislider.min.scss';
+
+
+// vistas de compoentes
+@import'../aceunam/globalPropio/view/login.scss';
+@import'../aceunam/globalPropio/components/header.scss';
+@import'../aceunam/globalPropio/components/footer.scss';
